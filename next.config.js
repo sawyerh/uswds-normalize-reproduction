@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+  sassOptions: {
+    includePaths: [
+      "./node_modules/@uswds",
+      "./node_modules/@uswds/uswds/packages",
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
